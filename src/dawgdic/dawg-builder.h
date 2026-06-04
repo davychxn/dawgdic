@@ -259,14 +259,12 @@ class DawgBuilder {
     hash_table_.resize(hash_table_size, 0);
 
     // Builds a new hash table.
-    BaseType count = 0;
     for (SizeType i = 1; i < base_pool_.size(); ++i) {
       BaseType index = static_cast<BaseType>(i);
       if (label_pool_[index] == '\0' || base_pool_[index].is_state()) {
         BaseType hash_id;
         FindTransition(index, &hash_id);
         hash_table_[hash_id] = index;
-        ++count;
       }
     }
   }
