@@ -14,17 +14,6 @@ In addition, **dawgdic** uses a double-array as a base data structure, so its re
 - Related projects
   - A Python wrapper. (https://github.com/kmike/DAWG)
 
-## Windows Binary Building 
-
-- Install [MSYS2](https://www.msys2.org/)
-- Open MSYS2 MINGW64 shell in installation directory
-- Go to the project directory
-- Run the following commands:
-```
-g++ -O2 -Wall -Isrc src/dawgdic-build.cc -o dawgdic-build.exe
-g++ -O2 -Wall -Isrc src/dawgdic-find.cc -o dawgdic-find.exe
-```
-
 ----
 
 # DAWG 辞書 C++ ヘッダライブラリ
@@ -44,13 +33,3 @@ DAWG はトライ（Trie）の共通部分木を併合したグラフ構造で�
 - Related projects
   - Python ラッパーです．(https://github.com/kmike/DAWG)
 
-## Windowsバイナリのビルド
-
-- [MSYS2](https://www.msys2.org/)をインストールします。
-- インストールディレクトリでMSYS2 MINGW64シェルを開きます。
-- プロジェクトディレクトリに移動します。
-- 以下のコマンドを実行します。
-```
-g++ -O2 -Wall -Isrc src/dawgdic-build.cc -o dawgdic-build.exe
-g++ -O2 -Wall -Isrc src/dawgdic-find.cc -o dawgdic-find.exe
-```
